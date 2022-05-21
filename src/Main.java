@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        task1();
+        task7();
     }
 
     public static void task1() {
@@ -76,6 +76,47 @@ public class Main {
                 break;
             default:
                 System.out.println("Тагоко номера месяца не сущетсвует");
+        }
+    }
+
+    public static void task6() {
+        int age = 19;
+        int salary = 58_000;
+        double limit;
+        if (age >= 23) {
+            limit = salary * 3;
+        } else {
+            limit = salary * 2;
+        }
+        if (salary >= 50_000 && salary < 80_000) {
+            limit = limit * 1.2;
+        } else if (salary >= 80_000) {
+            limit = limit * 1.5;
+        }
+        System.out.println("Мы готовы выдать вам кредитную карту с лимитом " + limit + " рублей");
+    }
+
+    public static void task7() {
+        int age = 19;
+        int salary = 60_000;
+        int wantedSum = 330_000;
+        double rate;
+        if (salary > 80_000) {
+            rate = 10 - 0.7;
+        } else {
+            rate = 10;
+        }
+        if (age < 23) {
+            rate = rate + 1;
+        } else if (age >= 23 && age < 30) {
+            rate = rate + 0.5;
+        }
+        double maxPay = (double) salary / 2;
+        double maxPayMonth = (wantedSum + (wantedSum * (rate / 100))) / 12;
+        if (maxPay > maxPayMonth) {
+            System.out.println("Максимальный платеж при ЗП " + salary + " равен " + maxPay + " рублей. Платеж по кредиту " + maxPayMonth + " рублей. Одобрено");
+        } else {
+            System.out.println("Максимальный платеж при ЗП " + salary + " равен " + maxPay + " рублей. Платеж по кредиту " + maxPayMonth + " рублей. Отказано");
         }
     }
 }
