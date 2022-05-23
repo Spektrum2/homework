@@ -54,7 +54,7 @@ public class Lesson_1_4 {
         int a = 0;
         int b = 1;
         System.out.print(a + " " + b + " ");
-        while (b < 34) {
+        for (int i = 0; i < 4 ; i++) {
             a = a + b;
             b = a + b;
             System.out.print(a + " " + b + " ");
