@@ -2,7 +2,7 @@ import java.sql.SQLOutput;
 
 public class Lesson_1_4 {
     public static void main(String[] args) {
-        task5();
+        task1();
     }
 
     public static void task1() {
@@ -12,8 +12,8 @@ public class Lesson_1_4 {
             System.out.print(i + " ");
         }
         System.out.println();
-        for (int j = 10; j > 0; j--) {
-            System.out.print(j + " ");
+        for (; i > 0; i--) {
+            System.out.print(i+ " ");
         }
     }
 
