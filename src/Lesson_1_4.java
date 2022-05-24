@@ -2,7 +2,7 @@ import java.sql.SQLOutput;
 
 public class Lesson_1_4 {
     public static void main(String[] args) {
-        task1();
+        task5();
     }
 
     public static void task1() {
@@ -53,11 +53,10 @@ public class Lesson_1_4 {
     public static void task5() {
         int a = 0;
         int b = 1;
-        System.out.print(a + " " + b + " ");
-        for (int i = 0; i < 4 ; i++) {
+        for (int i = 0; i < 5 ; i++) {
+            System.out.print(a + " " + b + " ");
             a = a + b;
             b = a + b;
-            System.out.print(a + " " + b + " ");
         }
     }
 
