@@ -3,7 +3,7 @@ public class Lesson_1_5 {
         task4();
     }
 
-    public static void task1() {
+    static void task1() {
         int[] arr1 = new int[3];
         arr1[0] = 1;
         arr1[1] = 2;
@@ -12,7 +12,7 @@ public class Lesson_1_5 {
         int[] arr3 = new int[]{4, 5, 6};
     }
 
-    public static void task2() {
+    static void task2() {
         int[] arr1 = new int[3];
         arr1[0] = 1;
         arr1[1] = 2;
@@ -44,7 +44,7 @@ public class Lesson_1_5 {
         }
     }
 
-    public static void task3() {
+    static void task3() {
         int[] arr1 = new int[3];
         arr1[0] = 1;
         arr1[1] = 2;
@@ -52,7 +52,6 @@ public class Lesson_1_5 {
         double[] arr2 = {1.57, 7.654, 9.986};
         int[] arr3 = new int[]{4, 5, 6, 7};
         for (int i = arr1.length - 1; i >= 0; i--) {
-            //System.out.print(arr1[i] + ", ");
             if (i != 0) {
                 System.out.print(arr1[i] + ", ");
             } else {
@@ -76,7 +75,8 @@ public class Lesson_1_5 {
             }
         }
     }
-    public static void task4() {
+
+    static void task4() {
         int[] arr1 = new int[3];
         arr1[0] = 1;
         arr1[1] = 2;
@@ -84,11 +84,8 @@ public class Lesson_1_5 {
         for (int i = 0; i < arr1.length; i++) {
             if (arr1[i] % 2 != 0) {
                 arr1[i]++;
-                System.out.println(arr1[i]);
-            } else {
-                System.out.println(arr1[i]);
             }
-
+            System.out.println(arr1[i]);
         }
     }
 }
