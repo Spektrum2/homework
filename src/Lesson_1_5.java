@@ -85,7 +85,10 @@ public class Lesson_1_5 {
             if (arr1[i] % 2 != 0) {
                 arr1[i]++;
             }
-            System.out.println(arr1[i]);
+            System.out.print(arr1[i]);
+            if (i != arr1.length - 1) {
+                System.out.print(", ");
+            }
         }
     }
 }
