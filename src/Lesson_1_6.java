@@ -2,10 +2,10 @@ import java.util.Arrays;
 
 public class Lesson_1_6 {
     public static void main(String[] args) {
-        task5();
+        task4();
     }
 
-    public static int[] generateRandomArray() {
+    static int[] generateRandomArray() {
         java.util.Random random = new java.util.Random();
         int[] arr = new int[30];
         for (int i = 0; i < arr.length; i++) {
@@ -44,7 +44,7 @@ public class Lesson_1_6 {
         for (int current : arr) {
             average += current;
         }
-        System.out.println("Средняя сумма трат за месяц составила " + average / 2 + " рублей");
+        System.out.println("Средняя сумма трат за месяц составила " + (double) average / arr.length + " рублей");
     }
 
     static void task5() {
