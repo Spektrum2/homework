@@ -5,7 +5,7 @@ public class Lesson_1_6 {
         task4();
     }
 
-    static int[] generateRandomArray() {
+    private static int[] generateRandomArray() {
         java.util.Random random = new java.util.Random();
         int[] arr = new int[30];
         for (int i = 0; i < arr.length; i++) {
@@ -14,7 +14,7 @@ public class Lesson_1_6 {
         return arr;
     }
 
-    static void task1() {
+    private static void task1() {
         int[] arr = generateRandomArray();
         int sum = 0;
         System.out.println(Arrays.toString(arr));
@@ -24,7 +24,7 @@ public class Lesson_1_6 {
         System.out.println("Сумма трат за месяц составила " + sum + " рублей");
     }
 
-    static void task2() {
+    private static void task2() {
         int[] arr = generateRandomArray();
         int maxSum = -1;
         int minSum = 200_001;
@@ -38,7 +38,7 @@ public class Lesson_1_6 {
         System.out.println("Минимальная сумма трат за день составила " + minSum + " рублей. Максимальная сумма трат за день составила " + maxSum + " рублей");
     }
 
-    static void task4() {
+    private static void task4() {
         int[] arr = generateRandomArray();
         int average = 0;
         for (int current : arr) {
@@ -47,9 +47,9 @@ public class Lesson_1_6 {
         System.out.println("Средняя сумма трат за месяц составила " + (double) average / arr.length + " рублей");
     }
 
-    static void task5() {
-        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
-        for (int i = reverseFullName.length - 1; i >= 0 ; i--) {
+    private static void task5() {
+        char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        for (int i = reverseFullName.length - 1; i >= 0; i--) {
             System.out.print(reverseFullName[i]);
 
         }
