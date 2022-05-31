@@ -5,7 +5,7 @@ public class Lesson_1_4 {
         task5();
     }
 
-    public static void task1() {
+    private static void task1() {
         int i = 0;
         while (i < 10) {
             i++;
@@ -17,13 +17,13 @@ public class Lesson_1_4 {
         }
     }
 
-    public static void task2() {
+    private static void task2() {
         for (int i = 1; i <= 31; i = i + 7) {
             System.out.println("Сегодня пятница, " + i + "-е число. Необходимо подготовить отчет.");
         }
     }
 
-    public static void task3() {
+    private static void task3() {
         int before = 1822;
         int after = 2122;
         int i = 0;
@@ -35,7 +35,7 @@ public class Lesson_1_4 {
         }
     }
 
-    public static void task4() {
+    private static void task4() {
         for (int i = 1; i <= 30; i++) {
             if (i % 3 == 0 && i % 5 == 0) {
                 System.out.println(i + ": ping pong");
@@ -50,7 +50,7 @@ public class Lesson_1_4 {
         }
     }
 
-    public static void task5() {
+    private static void task5() {
         int a = 0;
         int b = 1;
         for (int i = 0; i < 5 ; i++) {
