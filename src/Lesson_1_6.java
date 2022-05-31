@@ -17,7 +17,6 @@ public class Lesson_1_6 {
     private static void task1() {
         int[] arr = generateRandomArray();
         int sum = 0;
-        System.out.println(Arrays.toString(arr));
         for (int i = 0; i < arr.length; i++) {
             sum += arr[i];
         }
