@@ -3,7 +3,7 @@ public class Main {
         task7();
     }
 
-    public static void task1() {
+    private static void task1() {
         int clientOS = 0;
         if (clientOS == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке");
@@ -12,7 +12,7 @@ public class Main {
         }
     }
 
-    public static void task2() {
+    private static void task2() {
         int clientOS = 0;
         int clientDeviceYear = 2020;
         if (clientOS == 0) {
@@ -30,7 +30,7 @@ public class Main {
         }
     }
 
-    public static void task3() {
+    private static void task3() {
         int year = 2021;
         if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
             System.out.println(year + " год является високосным");
@@ -39,7 +39,7 @@ public class Main {
         }
     }
 
-    public static void task4() {
+    private static void task4() {
         int deliveryDistance = 94;
         int deliveryDays = 1;
         if (deliveryDistance > 20) {
@@ -51,7 +51,7 @@ public class Main {
         System.out.println(deliveryDays);
     }
 
-    public static void task5() {
+    private static void task5() {
         int monthNumber = 12;
         switch (monthNumber) {
             case 12:
@@ -79,7 +79,7 @@ public class Main {
         }
     }
 
-    public static void task6() {
+    private static void task6() {
         int age = 19;
         int salary = 58_000;
         double limit;
@@ -96,7 +96,7 @@ public class Main {
         System.out.println("Мы готовы выдать вам кредитную карту с лимитом " + limit + " рублей");
     }
 
-    public static void task7() {
+    private static void task7() {
         int age = 19;
         int salary = 60_000;
         int wantedSum = 330_000;
