@@ -5,7 +5,7 @@ public class arrays {
         task8();
     }
 
-    static void task5() {
+    private static void task5() {
         int[][] matrix = new int[3][3];
         for (int[] row : matrix) {
             for (int column : row) {
@@ -16,7 +16,7 @@ public class arrays {
         }
     }
 
-    static void task6() {
+    private static void task6() {
         int[] arr = {5, 4, 3, 2, 1};
         int[] arr1 = new int[5];
         System.out.println(Arrays.toString(arr));
@@ -26,7 +26,7 @@ public class arrays {
         System.out.println(Arrays.toString(arr1));
     }
 
-    static void task7() {
+    private static void task7() {
         int[] arr = {5, 4, 3, 2, 1};
         System.out.println(Arrays.toString(arr));
         for (int i = 0; i < arr.length; i++) {
@@ -37,7 +37,7 @@ public class arrays {
 
     }
 
-    static void task8() {
+    private static void task8() {
         int[] arr = {-6, 2, 5, -8, 8, 10, 4, -7, 12, 1};
         int sum = -2;
         Arrays.sort(arr);
@@ -55,7 +55,7 @@ public class arrays {
         }
     }
 
-    static void task9() {
+    private static void task9() {
         int[] arr = {-6, 2, 5, -8, 8, 10, 4, -7, 12, 1};
         int sum = -2;
         Arrays.sort(arr);
