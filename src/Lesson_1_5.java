@@ -3,7 +3,7 @@ public class Lesson_1_5 {
         task4();
     }
 
-    static void task1() {
+    private static void task1() {
         int[] arr1 = new int[3];
         arr1[0] = 1;
         arr1[1] = 2;
@@ -12,7 +12,7 @@ public class Lesson_1_5 {
         int[] arr3 = new int[]{4, 5, 6};
     }
 
-    static void task2() {
+    private static void task2() {
         int[] arr1 = new int[3];
         arr1[0] = 1;
         arr1[1] = 2;
@@ -44,7 +44,7 @@ public class Lesson_1_5 {
         }
     }
 
-    static void task3() {
+    private static void task3() {
         int[] arr1 = new int[3];
         arr1[0] = 1;
         arr1[1] = 2;
@@ -76,7 +76,7 @@ public class Lesson_1_5 {
         }
     }
 
-    static void task4() {
+    private static void task4() {
         int[] arr1 = new int[3];
         arr1[0] = 1;
         arr1[1] = 2;
