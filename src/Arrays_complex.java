@@ -1,19 +1,25 @@
 import java.util.Arrays;
 
-public class arrays {
+public class Arrays_complex {
     public static void main(String[] args) {
-        task8();
+        task5();
     }
 
     private static void task5() {
         int[][] matrix = new int[3][3];
+        for (int i = 0; i < matrix.length; i++) {
+            matrix[i][i] = 1;
+            matrix[matrix.length - 1 - i][i] = 1;
+
+        }
         for (int[] row : matrix) {
             for (int column : row) {
-                column = 1;
+
                 System.out.print(column + " ");
             }
             System.out.println();
         }
+
     }
 
     private static void task6() {
@@ -29,9 +35,10 @@ public class arrays {
     private static void task7() {
         int[] arr = {5, 4, 3, 2, 1};
         System.out.println(Arrays.toString(arr));
-        for (int i = 0; i < arr.length; i++) {
-            int j = arr[arr.length - 1 - i];
-            arr[i] = j;
+        for (int i = 0; i < arr.length / 2; i++) {
+            int j = arr[i];
+            arr[i] = arr[arr.length - 1 - i];
+            arr[arr.length - 1 - i] = j;
         }
         System.out.println(Arrays.toString(arr));
 
@@ -49,8 +56,11 @@ public class arrays {
                 System.out.println(arr[first] + ", " + arr[last]);
                 break;
             } else {
-                if (s < sum) first++;
-                else last--;
+                if (s < sum) {
+                    first++;
+                } else {
+                    last--;
+                }
             }
         }
     }
@@ -68,8 +78,11 @@ public class arrays {
                 first++;
                 last--;
             } else {
-                if (s < sum) first++;
-                else last--;
+                if (s < sum) {
+                    first++;
+                } else {
+                    last--;
+                }
             }
         }
     }
