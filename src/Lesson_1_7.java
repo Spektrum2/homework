@@ -1,6 +1,6 @@
 public class Lesson_1_7 {
     public static void main(String[] args) {
-        task7();
+        task6();
     }
 
     private static void task1() {
@@ -69,7 +69,7 @@ public class Lesson_1_7 {
         String[] symbol = a.split("");
         String[] symbol2 = b.split("");
         for (int i = 0; i < a.length(); i++) {
-            word.append(symbol[i] + symbol2[i]);
+            word.append(symbol[i]).append(symbol2[i]);
         }
         String result = word.toString();
         System.out.println(result);
