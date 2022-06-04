@@ -1,6 +1,6 @@
 public class Lesson_1_7 {
     public static void main(String[] args) {
-        task6();
+        task7();
     }
 
     private static void task1() {
@@ -79,8 +79,10 @@ public class Lesson_1_7 {
         String line = "aabccddefgghiijjkk";
         String[] symbol = line.split("");
         StringBuilder word = new StringBuilder();
-        for (int i = 0; i < line.length(); i+=2) {
-            word.append(symbol[i]);
+        for (int i = 0; i < line.length() - 1; i++) {
+            if (symbol[i].equals(symbol[i + 1])) {
+                word.append(symbol[i]);
+            }
         }
         String result = word.toString();
         System.out.println(result);
