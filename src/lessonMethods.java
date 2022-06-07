@@ -1,8 +1,8 @@
 import java.time.LocalDate;
 
-public class Lesson_1_8 {
+public class lessonMethods {
     public static void main(String[] args) {
-        task3();
+        task2();
     }
 
     private static void checkLeapYear(int year2) {
@@ -13,16 +13,16 @@ public class Lesson_1_8 {
         }
     }
 
-    private static void checkYearOS(int Year, int OS) {
+    private static void checkYearOS(int year, int os) {
         int currentYear = LocalDate.now().getYear();
-        if (OS == 0) {
-            if (Year < currentYear) {
+        if (os == 0) {
+            if (year < currentYear) {
                 System.out.println("Установите облегченную версию приложения для iOS по ссылке");
             } else {
                 System.out.println("Установите версию приложения для iOS по ссылке");
             }
         } else {
-            if (Year < currentYear) {
+            if (year < currentYear) {
                 System.out.println("Установите облегченную версию приложения для Android по ссылке");
             } else {
                 System.out.println("Установите версию приложения для Android по ссылке");
