@@ -20,8 +20,7 @@ public class Book {
     }
 
     public String getAuthorName(Book book) {
-        String authorName = book.getAuthor().getFirstName() + " " + book.getAuthor().getLastName();
-        return authorName;
+        return book.getAuthor().getFirstName() + " " + book.getAuthor().getLastName();
     }
 
     public int getYearPublishing() {
