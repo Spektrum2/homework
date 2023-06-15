@@ -1,12 +1,28 @@
 package pro.sky.java.course1.lesson1_9;
 
+//        1. Необходимо создать класс Book, который содержит в себе данные об имени, авторе и годе публикации. Типы полей должны быть String, Author (который мы создадим  в п. 2) и int.
+//        2. Необходимо создать класс Author, который содержит в себе данные об имени и фамилии автора.
+//        3. Написать конструкторы для обоих классов, заполняющие все поля.
+//        4. Создать геттеры для всех полей автора и всех полей книги.
+//        5. Создать сеттер для поля «Год публикации» у книги.
+//        6. В методе main создать несколько объектов Книга (достаточно двух) и несколько объектов Автор (достаточно тоже двух) и инициализировать друг друга.
+//        Учесть, что авторы являются обязательными членами книг и книги не могут создаться без авторов.
+//        Метод main не должен находиться в классах Book и Author.
+//        Требуется создать отдельный класс для запуска приложения и объявить метод main в нем.
+//        7. В том же методе main изменить год публикации одной из книг с помощью сеттера.
+//        Реализовать методы toString, equals и hashCode в классах Author и Book, которые были созданы на прошлом уроке.
+//        Обратите внимание, что toString книги не должен дублировать код из toString автора, а должен делегировать (вызывать) его версию метода.
 public class App {
     public static void main(String[] args) {
         Author king = new Author("Стивен", "Кинг");
+        Author author1 = new Author("Стивен", "Кинг");
         Author tolstoy = new Author("Лев", "Толсой");
-        Book deadZone = new Book("Мертвая зона", king,1978);
+        Book deadZone = new Book("Мертвая зона", king, 1978);
         Book warAndPeace = new Book("Война и мир", tolstoy, 1868);
-        System.out.println(deadZone.getName() + ", " + deadZone.getYearPublishing() + ", " + deadZone.getAuthorName(deadZone));
-        System.out.println(warAndPeace.getName() + ", " + warAndPeace.getYearPublishing() + ", " + warAndPeace.getAuthorName(warAndPeace));
+        Book warAndPeace2 = new Book("Война и мир", tolstoy, 1868);
+        System.out.println(king);
+        System.out.println(tolstoy);
+        System.out.println(deadZone);
+        System.out.println(warAndPeace);
     }
 }
